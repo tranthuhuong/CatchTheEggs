@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+    android:gravity="center"
+    android:background="@drawable/menubackground"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn" />
+    <LinearLayout
+        android:background="@drawable/change_pass_bg"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_marginTop="60dp"
+            android:hint="//username"
+            android:paddingLeft="30dp"
+            android:background="@drawable/bg_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:id="@+id/edtPassNew"
+            android:hint="//your new Pass"
+            android:paddingLeft="30dp"
+            android:background="@drawable/bg_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:id="@+id/edtRePassNew"
+            android:background="@drawable/bg_edt"
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:hint="//re password"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/btnReset"
+    android:background="@drawable/change_pass"
+    android:layout_width="200dp"
+    android:layout_height="50dp" />
+
+</LinearLayout>
